@@ -1,4 +1,4 @@
-import 'package:roguelike/roguelike.dart';
+import '../lib/roguelike.dart';
 
 void main() {
 

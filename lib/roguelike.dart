@@ -10,6 +10,8 @@ class Roguelike {
   static final int QUANTIDADE_CRIATUDAS = 60;
   static final int QUANTIDADE_VIDAS = 2;
   static final double FATOR_PROFUNDIDADE = 2.0;
+  static final int QUANTIDADE_CRIATUDAS_AGRESSIVAS = 40;
+  static final int QUANTIDADE_TESOUROS  = 50;
 
   // Variáveis
   Mundo _mundo;
@@ -42,6 +44,9 @@ class Roguelike {
         .preencher(SIMBOLO_PAREDE, true)
         .criarCaminho(posicao.x, posicao.y, passos)
         .criarCriaturas(QUANTIDADE_CRIATUDAS)
+        .criarCriaturasDoceis(QUANTIDADE_CRIATUDAS)
+        .criarCriaturasAgressivas(QUANTIDADE_CRIATUDAS_AGRESSIVAS)
+        .criarTesouros(QUANTIDADE_TESOUROS)
         .build();
 
     // Coloca o jogador dentro do mundo
